@@ -26,25 +26,34 @@ body {
 
 /* Main content and container content syles */
 
+/* All the main content stles */
+
 .main-content {
     flex: 1;
-    min-width: 100px;
+    min-width: 200px;
     margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    padding: 1px;
+    background-color: #23282d;
+    color: #fafaf8;
+    border-radius: 8px;
 }
 
 .content-container {
+    justify-self: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px;
-    max-width: 1200px;
-    background-color: #23282d; 
-    border: 1px solid #58c461; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    max-width: 1000px;
+    background-color: #23282d;
+    border: 1px solid #58c461;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgb(0, 255, 85);
 }
 
 .content-container h2 {
@@ -58,12 +67,6 @@ body {
 }
 
 /* Primary content tyles */
-
-header, footer, section {
-    margin: 0px 0;
-    padding: 10px;
-    border-radius: 8px;
-}
 
 header {
     font-family: 'Roboto', sans-serif;
@@ -109,23 +112,23 @@ header h1 {
 }
 
 .navbar a {
-    color: #23282d; 
+    color: #23282d;
     font-size: 1.8rem;
     background-color: #b9ffb9;
     padding: 5px 20px;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #34d134; 
-    color: #23282d; 
+    background-color: #34d134;
+    color: #23282d;
 }
 
 .navbar a.active {
-    background-color: #80ff80; 
+    background-color: #80ff80;
     color: #0f3a66;
 }
 
@@ -134,23 +137,27 @@ header h1 {
 section {
     width: 95%;
     color: #fafaf8;
-    margin: 10px 0px;
+    margin: 10px 10px;
     padding: 2px;
     box-shadow: 0 2px 5px #15ff00;
     background-color: #17b12c;
+    border-radius: 10px;
 }
 
 /* Footer Styles */
 
 footer {
     width: 100%;
-    background-color: #17b12c;
-    color: #333;
+    background-color: #50ff4a;
+    color: #000000;
     text-align: center;
-    padding: 1px 0;
     position: sticky;
     bottom: 0;
+    padding-bottom: 1px;
+    padding-top: 1px;
 }
+
+/* List item styles */
 
 ul {
     padding: 0;
@@ -162,20 +169,32 @@ li {
     background-color: #7ccf45;
 }
 
+li h4 {
+    margin: 0;
+    padding: 0;
+    color: #23282d;
+}
+
 /* Syles for Tech New component */
 
 aside {
     flex: 0 0 200px;
     padding: 10px;
+    margin: 10px;
+    margin-bottom: auto;
     border: 1px solid #58c461;
-    margin: 10px 0;
     background-color: #23282d;
     color: #fafaf8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 article {
-    margin-bottom: 5px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 1px solid #58c461;
+    background-color: #23282d;
+    color: #fafaf8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 article h3 {
@@ -184,8 +203,7 @@ article h3 {
     color: #58c461;
 }
 
-article p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #fafaf8;
+article a {
+    color: #58c461;
+    text-decoration: none;
 }
