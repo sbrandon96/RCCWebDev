@@ -1,0 +1,175 @@
+/* 
+
+Primary styles for webstite
+
+Author: Brandon Stewart
+
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('assets/backgroundGreeb.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Container styles */
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #23282d; 
+    border: 1px solid #58c461; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    max-width: 800px;
+    width: 90%;
+    margin: 5px auto; 
+    padding: 1px;
+    background-color: #23282d; 
+    border: 1px solid #58c461; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header styles */
+
+header {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: #23282d;
+    color: #fafaf8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* NAV bar styles  */
+
+.navbar {
+    width: 100%;
+    background-color: #58c461;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    top: 0;
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline;
+    border-right: 1px solid #333;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar a {
+    color: #23282d; 
+    font-size: 1.8rem;
+    background-color: #b9ffb9;
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar a:hover {
+    background-color: #34d134; 
+    color: #23282d; 
+}
+
+.navbar a.active {
+    background-color: #80ff80; 
+    color: #0f3a66;
+}
+
+/* Section styles */
+
+section {
+    width: 80%;
+    height: 50%;
+    color: #fafaf8;
+    margin: 0 auto;
+    padding: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #23282d;
+}
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    background-color: #58c461;
+    color: #333;
+    text-align: center;
+    padding: 4px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+/* List Styles */
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: black;
+    background-color: #afff7a;
+}
+
+/* News API Elements */
+
+aside {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    display: block;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+article h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+article p {
+    margin: 5px 0;
+    font-size: 14px;
+}

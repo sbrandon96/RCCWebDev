@@ -1,0 +1,35 @@
+/* Media Queries for responsive layout */
+
+@media screen and (min-width: 768px) {
+    /* Container layout */
+    div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* Image layout */
+    img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #020202;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    /* Container layout */
+    div {
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* Image layout */
+    img {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #020202;
+    }
+    
+}
