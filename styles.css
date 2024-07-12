@@ -1,10 +1,12 @@
 /* 
 
-Primary styles for webstite
+Primary styles for website
 
 Author: Brandon Stewart
 
 */
+
+/* General styling */
 
 html {
     font-size: 62.5%;
@@ -22,14 +24,22 @@ body {
     background-size: cover;
 }
 
-/* Container styles */
+/* Main content and container content syles */
+
+.main-content {
+    flex: 1;
+    min-width: 100px;
+    margin-left: 20px;
+}
 
 .content-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     max-width: 1200px;
     background-color: #23282d; 
     border: 1px solid #58c461; 
@@ -37,26 +47,31 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-div {
-    max-width: 800px;
-    width: 90%;
-    margin: 5px auto; 
-    padding: 1px;
-    background-color: #23282d; 
-    border: 1px solid #58c461; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+.content-container h2 {
+    margin: 0;
+    padding: 0;
+    color: #fafaf8;
 }
 
-/* Header styles */
+.content-container p {
+    color: #fafaf8;
+}
+
+/* Primary content tyles */
+
+header, footer, section {
+    margin: 0px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
 
 header {
     font-family: 'Roboto', sans-serif;
+    font-style: italic;
     width: 100%;
-    background-color: #23282d;
+    background-color: #1b2720;
     color: #fafaf8;
     text-align: center;
-    padding: 10px 0;
 }
 
 header h1 {
@@ -65,7 +80,7 @@ header h1 {
     text-align: center;
 }
 
-/* NAV bar styles  */
+/* Navigation  bar styles */
 
 .navbar {
     width: 100%;
@@ -114,31 +129,28 @@ header h1 {
     color: #0f3a66;
 }
 
-/* Section styles */
+/* Content block styles */
 
 section {
-    width: 80%;
-    height: 50%;
+    width: 95%;
     color: #fafaf8;
-    margin: 0 auto;
-    padding: 5%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #23282d;
+    margin: 10px 0px;
+    padding: 2px;
+    box-shadow: 0 2px 5px #15ff00;
+    background-color: #17b12c;
 }
 
-/* Footer styles */
+/* Footer Styles */
 
 footer {
     width: 100%;
-    background-color: #58c461;
+    background-color: #17b12c;
     color: #333;
     text-align: center;
-    padding: 4px 0;
+    padding: 1px 0;
     position: sticky;
     bottom: 0;
 }
-
-/* List Styles */
 
 ul {
     padding: 0;
@@ -147,29 +159,33 @@ ul {
 
 li {
     color: black;
-    background-color: #afff7a;
+    background-color: #7ccf45;
 }
 
-/* News API Elements */
+/* Syles for Tech New component */
 
 aside {
-    width: 300px;
+    flex: 0 0 200px;
     padding: 10px;
-    border: 1px solid #ccc;
-    margin: 20px;
-    display: block;
+    border: 1px solid #58c461;
+    margin: 10px 0;
+    background-color: #23282d;
+    color: #fafaf8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 article {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 article h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
+    color: #58c461;
 }
 
 article p {
     margin: 5px 0;
     font-size: 14px;
+    color: #fafaf8;
 }
