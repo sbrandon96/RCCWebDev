@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 
 Primary styles for website
@@ -59,7 +60,8 @@ body {
 .content-container h2 {
     margin: 0;
     padding: 0;
-    color: #fafaf8;
+    text-decoration: underline;
+    color: #e6e6e6;
 }
 
 .content-container p {
@@ -81,6 +83,51 @@ header h1 {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+/* Welcome text */
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+/* Experience text */
+.experience{
+    justify-content: space-between;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.in-line-image {
+    float: left; 
+    margin: 0 15px 15px 0; 
+    max-width: 165px;
+    height: auto;
+}
+
+.in-line-image2 {
+    float: right; 
+    margin: 5px 5px 5px 5px; 
+    max-width: 170px;
+    height: auto;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.clear {
+    clear: both;
 }
 
 /* Navigation  bar styles */
@@ -137,10 +184,10 @@ header h1 {
 section {
     width: 95%;
     color: #fafaf8;
-    margin: 10px 10px;
+    margin: 20px 10px;
     padding: 2px;
     box-shadow: 0 2px 5px #15ff00;
-    background-color: #17b12c;
+    background-color: #10b819a1;
     border-radius: 10px;
 }
 
@@ -159,21 +206,34 @@ footer {
 
 /* List item styles */
 
-ul {
+.grid ul {
     padding: 0;
     margin: 0;
 }
 
-li {
+.grid li {
     color: black;
     background-color: #7ccf45;
 }
 
-li h4 {
+.grid li h4 {
     margin: 0;
     padding: 0;
     color: #23282d;
 }
+
+#lang-list {
+    display: flex;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: left;
+}
+
+#lang-list li {
+    display: inline;
+    margin: 3px 13px;
+}
+
 
 /* Syles for Tech New component */
 
