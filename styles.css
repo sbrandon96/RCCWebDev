@@ -16,7 +16,9 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 1.6rem;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 68px 0;
     padding: 0;
     box-sizing: border-box;
     background-image: url('assets/backgroundGreeb.jpg');
@@ -39,6 +41,7 @@ body {
     background-color: #23282d;
     color: #fafaf8;
     border-radius: 8px;
+
 }
 
 .content-container {
@@ -54,7 +57,7 @@ body {
     background-color: #23282d;
     border: 1px solid #58c461;
     border-radius: 8px;
-    box-shadow: 0 4px 5px rgb(0, 255, 85);
+    box-shadow: 0 7px 10px rgb(60, 255, 0);
 }
 
 .content-container h2 {
@@ -111,6 +114,7 @@ header h1 {
     margin: 0 15px 15px 0; 
     max-width: 165px;
     height: auto;
+    border: #15ff00 2px solid;
 }
 
 .in-line-image2 {
@@ -118,6 +122,7 @@ header h1 {
     margin: 5px 5px 5px 5px; 
     max-width: 170px;
     height: auto;
+    border: #15ff00 2px solid;
 }
 
 h3 {
@@ -128,6 +133,98 @@ h3 {
 
 .clear {
     clear: both;
+}
+
+/* Interests text */
+
+.interests{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.philosophers{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #15ff00 2px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#fav-philosophers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px dashed #00ff15;
+    margin: 10px auto;
+    
+}
+
+.philosopher {
+    text-align: center;
+    margin: 10px;
+}
+
+.philo-caption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.book{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #15ff00 2px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* About section styles */
+
+#biography{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#biography h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#biography p {
+    display: flex;
+    color: #fafaf8;
+}
+
+#biography img {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 200px;
+    height: auto;
+    border: #15ff00 2px solid;
 }
 
 /* Navigation  bar styles */
@@ -179,6 +276,40 @@ h3 {
     color: #0f3a66;
 }
 
+/* Side Navbar Styles */
+.side-navbar {
+    position: fixed;
+    top: 0px; /* Adjust this value to match the height of your main navbar */
+    right: 0;
+    width: 140px;
+    background-color: #23282d;
+    color: #fafaf8;
+    border-left: 1px solid #58c461;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 20px;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-navbar li {
+    margin: 10px 0;
+}
+
+.side-navbar a {
+    color: #58c461;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.side-navbar a:hover {
+    color: #00ff37;
+}
+
 /* Content block styles */
 
 section {
@@ -189,20 +320,21 @@ section {
     box-shadow: 0 2px 5px #15ff00;
     background-color: #10b819a1;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /* Footer Styles */
 
 footer {
     width: 100%;
-    background-color: #50ff4a;
+    background-color: #3bfd35;
     color: #000000;
     text-align: center;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding: 1px 0;
 }
+
 
 /* List item styles */
 
@@ -213,7 +345,7 @@ footer {
 
 .grid li {
     color: black;
-    background-color: #7ccf45;
+    background-color: #4acf45;
 }
 
 .grid li h4 {
@@ -235,7 +367,7 @@ footer {
 }
 
 
-/* Syles for Tech New component */
+/* Syles for Tech News */
 
 aside {
     flex: 0 0 200px;
@@ -243,7 +375,7 @@ aside {
     margin: 10px;
     margin-bottom: auto;
     border: 1px solid #58c461;
-    background-color: #23282d;
+    background-color: #267726;
     color: #fafaf8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -252,7 +384,7 @@ article {
     margin: 10px 10px;
     padding: 10px;
     border: 1px solid #58c461;
-    background-color: #23282d;
+    background-color: #0e9937;
     color: #fafaf8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -260,10 +392,10 @@ article {
 article h3 {
     margin: 0;
     font-size: 14px;
-    color: #58c461;
+    color: #000000;
 }
 
 article a {
-    color: #58c461;
+    color: #ffffff;
     text-decoration: none;
 }
