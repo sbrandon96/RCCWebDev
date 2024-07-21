@@ -351,7 +351,6 @@ section {
     box-shadow: 0 2px 5px #15ff00;
     background-color: #10b819a1;
     border-radius: 10px;
-    object-fit: cover;
 }
 
 /* Footer Styles */
@@ -369,16 +368,28 @@ footer {
 
 /* List item styles */
 
-.grid ul {
-    padding: 0;
-    margin: auto;
-    border: 2px solid #ffbb00;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    list-style-type: none;
 }
 
 .grid li {
-    color: black;
-    background-color: #4acf45;
-    border: 2px solid #ffffff;
+    display: block;
+    flex: 1 1 calc(33.333% - 10px);
+    margin: auto;
+    border: 1px solid #58c461;
+    border-radius: 8px;
+    background-color: #04c03d;
+    color: #fafaf8;
+    font-size: large;
+    text-align: center;
+    transition: background-color 0.2s ease;
 }
 
 .grid li h4 {
@@ -398,6 +409,41 @@ footer {
     display: inline;
     margin: 3px 13px;
 }
+
+#tech-sites{
+    display: flexbox;
+    flex-direction: column;
+    flex-shrink: calc(33.333% - 10px);
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#tech-sites li {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #58c461;
+    border-radius: 8px;
+    background-color: #0e9937;
+    color: #fafaf8;
+    font-size: large;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+#tech-sites img {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 200px;
+    height: auto;
+    border: #15ff00 2px solid;
+}
+
 
 
 /* Syles for Tech News */

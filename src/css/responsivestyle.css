@@ -1,67 +1,59 @@
-/* Media Queries for responsive layout */
+/* Media Queries */
 
-@media screen and (max-width: 500px) {
-    div {
-        width: 90%;
-        margin: 0 auto;
+/* Desktops */
+@media (min-width: 1024px) {
+    .navbar ul li {
+        display: inline-block;
+        margin: 0 10px;
     }
 
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #020202;
+    .content-container {
+        display: flex;
     }
 
     aside {
-        display: none;
+        margin: 0 20px 0 0;
+    }
+
+    .grid li {
+        flex: 1 1 calc(33.333% - 10px);
     }
 }
 
-@media screen and (min-width: 501px) {
-    div {
-        width: 80%;
-        margin: 0 auto;
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
     }
 
-    img {
-        width: 50%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #020202;
+    .content-container {
+        flex-direction: column;
     }
-    
+
+    aside {
+        margin: 0 0 20px 0;
+    }
+
+    .grid li {
+        flex: 1 1 calc(50% - 10px);
+    }
 }
 
-@media screen and (min-width: 768px) {
-    div {
-        width: 80%;
-        margin: 0 auto;
+/* Mobile Phones */
+@media (max-width: 480px) {
+    header h1, footer p {
+        font-size: 18px;
     }
 
-    img {
-        width: 50%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #020202;
+    .content-container {
+        padding: 10px;
     }
 
-}
-
-@media screen and (min-width: 1024px) {
-    div {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    img {
-        width: 30%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #020202;
+    .grid li {
+        flex: 1 1 100%;
     }
 }
