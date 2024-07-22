@@ -21,7 +21,7 @@ body {
     margin: 0 0 68px 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('/assets/backgroundGreeb.jpg');
+    background-image: url('backgroundGreeb.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
